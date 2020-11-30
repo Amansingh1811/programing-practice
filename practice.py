@@ -1,11 +1,18 @@
 class array:
-    def even(self, ):
+    def even(self, ):  
         self.num = num
-        for number in range(10):
-            if (number % 2 != 0):
-                print("all number", number)
+        if num > 1 :
+            for i in range(2, num):
+                if (num % i) == 0:
+                    print(num, "is not a prime number")
+                    print(i, "times" , num//i, "is" , num)
+                    break
+                else:
+                    print(num, "is a prime number")
 
-
-num = range(20)
+        else:
+            print(num, "is not a prime number")            
+                
+num = int(input("enter the value"))
 N = array()
 print(N.even())
